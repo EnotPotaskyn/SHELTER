@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  cursor: default;
+  text-decoration: none;
+}
+* a:hover,
+*::before a:hover,
+*::after a:hover {
+  cursor: pointer;
+}
+a:hover{
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+body._lock{
+  overflow: hidden;
+}
+@media  (max-width:425px) {
+  .container {
+    width: 100%;
+    max-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 426px) and (max-width:769px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 770px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+}

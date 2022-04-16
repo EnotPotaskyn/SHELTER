@@ -1,0 +1,100 @@
+.button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-primary;
+  border-radius: 100px;
+  border: none;
+  height: 52px;
+
+  .button-text{
+    @include text($font-Georgia, 17px, 400, 22px, $color-dark-6);
+  }
+
+  @media (hover), (min-width:0\0), (min--moz-device-pixel-ratio:0) {
+    &:hover ,  .button-text:hover{
+      cursor: pointer;
+      background: $color-light;
+    }
+    &:hover{
+  border: 2px solid $color-primary;
+
+    }
+  }
+  &:active ,  .button-text:active{
+    cursor: pointer;
+  }
+}
+
+
+.button-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-light;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  height: 52px;
+
+  .button-text{
+    @include text($font-Georgia, 17px, 400, 22px, $color-dark-6);
+  }
+  @media (hover), (min-width:0\0), (min--moz-device-pixel-ratio:0) {
+    &:hover ,  .button-text:hover{
+      cursor: pointer;
+      background: $color-primary;
+    }
+  }
+  &:active ,  .button-text:active{
+    cursor: pointer;
+    background: $color-primary;
+  }
+}
+
+.button-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-light;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  width: 52px;
+  height: 52px;
+
+  .button-arrow-text{
+    background: url('/asset/icons/Arrow.svg') no-repeat;
+    width: 44%;
+    height: 19%;
+  }
+  
+  .button-arrow-text-2{
+    background: url('/asset/icons/Arrow.svg') no-repeat 100% 100%;
+    transform: rotate(180deg);
+    width: 35%;
+    height: 20%;
+  }
+  @media (hover), (min-width:0\0), (min--moz-device-pixel-ratio:0) {
+    &:hover ,  .button-arrow-text:hover ,.button-arrow-text-2:hover {
+      cursor: pointer;
+      background: $color-primary;
+    }
+  }
+  &:active ,  .button-arrow-text:active ,.button-arrow-text-2:active{
+    cursor: pointer;
+    background: $color-primary;
+  }
+
+}
+
+.start-button {
+  width: 207px;
+}
+.pets__more{
+  width: 187px;
+}
+.pets__button{
+  width: 260px
+}

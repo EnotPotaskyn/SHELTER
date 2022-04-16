@@ -1,0 +1,178 @@
+  .header__row__nav{
+
+    position: fixed;
+    right: -200%;
+    top: 0px;
+    min-width: 320px;
+    height: 100%;
+    background-color: $color-dark-6;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+
+    &._active{
+        display: flex;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 327px;
+        
+        &__li > li{
+            margin: 0 0 40px 0;
+        }
+        &__li > 
+        &__li > li:last-child{
+            margin: 0;
+        }
+        &__link{
+            @include text($font-Arial,32px,400,51px,$color-light-3);
+            letter-spacing: 0em;
+        }      
+    }
+    li:nth-child(1) {
+        border-bottom: 3px solid $color-primary;
+    }
+    
+    @media (min-width: 690px) and (max-width:768px){
+        &{
+            position: relative;
+            display: flex;
+            background:none;
+            right: 0;
+            top: -2px;
+            height: 100%;
+            width: 70%;
+            flex-direction: row;
+            column-gap: 35px;
+            }
+
+        &__list{
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            column-gap: 35px;
+            
+            &__link{
+                @include text($font-Arial,15px,400,24px,$color-light-3);
+                letter-spacing: 0em;
+            }  
+        }
+    }
+    @media (min-width: 769px) {
+        &{
+            position: relative;
+            display: flex;
+            background:none;
+            right: 0;
+            top: -2px;
+            height: 100%;
+            column-gap: 35px;
+            }
+
+        &__list{
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            column-gap: 35px;
+            &__link{
+                @include text($font-Arial,15px,400,24px,$color-light-3);
+                letter-spacing: 0em;
+            }  
+        }
+    }
+}  
+
+.header__pets__row__nav{
+
+    position: fixed;
+    right: -200%;
+    top: 0px;
+    min-width: 320px;
+    height: 100%;
+    background-color: $color-light-2;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+
+    &._active{
+        display: flex;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 327px;
+        
+        &__li > li{
+            margin: 0 0 40px 0;
+        }
+        &__li > 
+        &__li > li:last-child{
+            margin: 0;
+        }
+        &__link{
+            @include text($font-Arial,32px,400,51px,$color-dark-3);
+            letter-spacing: 0em;
+        }      
+    }
+    li:nth-child(2) {
+        border-bottom: 3px solid $color-primary;
+    }
+    
+    @media (min-width: 650px) and (max-width:769px){
+        &{
+            position: relative;
+            display: flex;
+            background:none;
+            right: 0;
+            top: -2px;
+            height: 100%;
+            width: 62.5%;
+            }
+
+        &__list{
+            height: 27px;
+            width: 100%;
+            flex-direction: row;
+            
+            &__link{
+                @include text($font-Arial,15px,400,24px,$color-dark-3);
+                letter-spacing: 0em;
+            }  
+        }
+    }
+    @media (min-width: 770px) {
+        &{
+            position: relative;
+            display: flex;
+            background:none;
+            right: 0;
+            top: -2px;
+            height: 100%;
+            width:37%;
+            }
+
+        &__list{
+            height: 27px;
+            width: 100%;
+            flex-direction: row;
+            
+            &__link{
+                @include text($font-Arial,15px,400,24px,$color-dark-3);
+                letter-spacing: 0em;
+            }  
+        }
+    }
+}  

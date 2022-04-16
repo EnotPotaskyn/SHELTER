@@ -1,0 +1,24 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+@import 'base/reset';
+
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/navigation';
+@import 'layout/start-screen';
+@import 'layout/about';
+@import 'layout/pets';
+@import 'layout/help';
+@import 'layout/donation';
+@import 'layout/footer';
+@import 'layout/pets_our';
+
+
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/pets-img';
+
+@import 'pages/home';
+@import 'pages/our-pets';
