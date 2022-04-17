@@ -3,17 +3,12 @@
     width: 100%;
     display:flex;
     align-items: flex-end;
-    @media  (max-width:449px) {
-        &{ 
-            height: 100%;
-            min-width: ;
-        }}
+    height: 100%;
     @media (min-width: 450px) and (max-width:768px) {
-        &{ height: 139.5vh;
-           justify-content: center;}}
+        &{ justify-content: center;}}
     @media (min-width: 769px){
-        &{  height: 92.5vh;
-        justify-content: center;}}
+        &{  justify-content: center;
+        padding-top: 100px;}}
 
     &__screen-content{
         display: flex;
@@ -30,10 +25,11 @@
             justify-content: flex-end;}}
         @media (min-width: 769px){
         &{  
-            gap:42px;
-            height: 82.5vh;
+            gap: 42px;
             justify-content: flex-end;
-            align-items: center;}}
+            align-items: center;
+            min-height: 809px;
+        }}
 
             &__content {
             display: flex;
@@ -91,7 +87,7 @@
         @media (min-width: 769px){
             &{ 
                 width: 65%;
-                height: 100%;
+                min-height: 800px;
         }}     
     }
 }
