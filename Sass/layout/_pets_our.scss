@@ -115,6 +115,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding-top: 85px;
+        
         &__content{
             height: 697px;
             display: flex;
@@ -147,6 +148,7 @@
                     transition: all 0.3s linear;
                     cursor: pointer;
                 }
+                
                 &__name{
                     @include text($font-Georgia, 20px, 400, 23px, $color-dark-3);
                     text-align: center;
