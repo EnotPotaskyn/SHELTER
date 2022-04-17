@@ -1,9 +1,6 @@
 .about{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    padding: 80px 175px 100px;
+    
     &__container{
         width: 100%;
         display: flex;
@@ -11,9 +8,7 @@
         align-items: center;
         @media (min-width: 769px){
             &{
-                height: 40vh;
                 gap: 120px;
-              
                 flex-direction: row-reverse;
             }
         }
@@ -22,6 +17,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        max-width: 430px;
         @media  (max-width:449px) {
             &{  align-items: center;
             }}
@@ -30,14 +26,19 @@
                 gap: 25px;
             }}
         @media (min-width: 769px){
-            &{  align-items:flex-start;
+            &{  
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 380px;
+                max-width: 430px;
                 gap: 25px;
             }}
 
         &__title{
             @include text($font-Georgia, 25px, 400, 32px, $color-dark-3);
             text-align: center;
-            padding: 1px 30px;
             @media  (min-width:450px) {
                &{
                 @include text($font-Georgia, 35px, 400, 45px, $color-dark-3);
@@ -69,7 +70,7 @@
         }
         @media (min-width: 450px){
             &{  width: 100%;
-                height: 100%;}
+                min-height: 408px;}
         }
 }
 }
